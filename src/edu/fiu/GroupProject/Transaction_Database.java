@@ -10,7 +10,8 @@ import edu.fiu.sysdesign.SelfCheckUtils;
  * @author 18135
  *
  */
-public class Transaction_Database implements SelfCheckCapable {
+public class Transaction_Database implements SelfCheckCapable
+{
 
 	int amount;
 	int typement_type;
@@ -36,7 +37,7 @@ public class Transaction_Database implements SelfCheckCapable {
 		return "Tansaction logged";
 	}
 
-	@Override
+	
 	public boolean selfCheck() {
 		// TODO Auto-generated method stub
 		return SelfCheckUtils.randomCheck(0.001);
@@ -51,7 +52,8 @@ public class Transaction_Database implements SelfCheckCapable {
 	/**
 	 * @param args
 	 */
-	public static void main(String[] args) {
+	public static void main(String[] args) 
+	{
 		// TODO Auto-generated method stub
 		Customer myCustomer = new Customer();
 	     myCustomer.runSelfCheck(); 
@@ -70,28 +72,52 @@ public class Transaction_Database implements SelfCheckCapable {
 	     Machine myMachine1 = new Machine();
 	     myMachine1.Sanitize_hand();
 	     
+	     //Transaction_Validiation myTransaction_Validiation = new Transaction_Validiation();
+	     //myTransaction_Validiation.runSelfCheck();
+	     
+	     
+	     
 	     Transaction_Validiation myTransaction_Validiation = new Transaction_Validiation();
-	     myTransaction_Validiation.runSelfCheck();
+	     if ( myTransaction_Validiation.runSelfCheck())
+	     {
+	    	 Banks_Interface myBanks_Interface = new Banks_Interface();
+		    if( myBanks_Interface.runSelfCheck())
+		    {
+		    	Network_Interface_Layer myNetwork_Interface_Layer = new Network_Interface_Layer();
+		    	if(myNetwork_Interface_Layer.runSelfCheck())
+		    	{
+		    		 Network_layer myNetwork_layer = new Network_layer();
+		    	     if(myNetwork_layer.runSelfCheck())
+		    	     {
+		    	    	 Application_layer myApplication_layer = new Application_layer();
+		    		     if(myApplication_layer.runSelfCheck())
+		    		     {
+		    		    	 Transaction_Database myTransaction_Database =  new Transaction_Database();
+		    			     if(myTransaction_Database.runSelfCheck())
+		    			     {
+		    			    	 Machine myMachine = new Machine();
+		    				     myMachine.runSelfCheck();
+		    				     System.out.println("Tickets emailed and please sanitize our hands");
+		    				     
+		    			     }
+		    			     else  System.out.println("communication failed and transaction failed");
+		    		     }
+		    		     else System.out.println("communication failed and transaction failed");
+		    	     }
+		    	     else   System.out.println("communication failed and transaction failed");   
+		    	}
+		    	else System.out.println("communication failed and transaction failed");
+		    }
+		    else   System.out.println("communication failed and transaction failed");
+	     }
+	     else   System.out.println("communication failed and transaction failed");
 	     
-	     Banks_Interface myBanks_Interface = new Banks_Interface();
-	     myBanks_Interface.runSelfCheck();
-	     
-	     Network_Interface_Layer myNetwork_Interface_Layer = new Network_Interface_Layer();
-	     myNetwork_Interface_Layer.runSelfCheck();
-	     
-	     Network_layer myNetwork_layer = new Network_layer();
-	     myNetwork_layer.runSelfCheck();
-	     
-	     Application_layer myApplication_layer = new Application_layer();
-	     myApplication_layer.runSelfCheck();
-	     
-	     Transaction_Database myTransaction_Database =  new Transaction_Database();
-	     myTransaction_Database.runSelfCheck();
-	     
-	     Machine myMachine = new Machine();
-	     myMachine.runSelfCheck(); 
+	  
 	     
 	    
+	
+
+	
 	}
 
 }

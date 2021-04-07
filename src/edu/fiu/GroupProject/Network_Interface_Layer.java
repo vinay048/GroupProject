@@ -40,7 +40,8 @@ public class Network_Interface_Layer implements SelfCheckCapable {
 	@Override
 	public boolean selfCheck() {
 		// TODO Auto-generated method stub
-		return SelfCheckUtils.randomCheck(0.01);
+		
+		return SelfCheckUtils.randomCheck(0.3);
 	}
 
 	@Override

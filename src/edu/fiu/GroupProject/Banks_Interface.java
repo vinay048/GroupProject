@@ -33,7 +33,7 @@ public class Banks_Interface implements SelfCheckCapable {
 	@Override
 	public boolean selfCheck() {
 		// TODO Auto-generated method stub
-		return SelfCheckUtils.randomCheck(0.001);
+		return SelfCheckUtils.randomCheck(0.000000000001);
 	}
 
 	@Override

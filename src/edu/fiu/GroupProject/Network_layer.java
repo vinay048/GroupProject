@@ -35,7 +35,7 @@ public class Network_layer implements SelfCheckCapable {
 	@Override
 	public boolean selfCheck() {
 		// TODO Auto-generated method stub
-		return SelfCheckUtils.randomCheck(0.001);
+		return SelfCheckUtils.randomCheck(0.01);
 	}
 
 	@Override

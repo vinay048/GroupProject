@@ -43,7 +43,7 @@ public class Transaction_Validiation implements SelfCheckCapable {
 	@Override
 	public boolean selfCheck() {
 		// TODO Auto-generated method stub
-		return SelfCheckUtils.randomCheck(0.001);
+		return SelfCheckUtils.randomCheck(0.0000000000000000001);
 	}
 
 	@Override
@@ -53,3 +53,5 @@ public class Transaction_Validiation implements SelfCheckCapable {
 	}
 
 }
+
+
