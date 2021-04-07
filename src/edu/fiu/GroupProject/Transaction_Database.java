@@ -97,7 +97,7 @@ public class Transaction_Database implements SelfCheckCapable
 		    			     {
 		    			    	 Machine myMachine = new Machine();
 		    				     myMachine.runSelfCheck();
-		    				     System.out.println("Tickets emailed and please sanitize our hands");
+		    				     System.out.println("Tickets emailed and please sanitize your hands");
 		    				     
 		    			     }
 		    			     else  System.out.println("communication failed and transaction failed");
@@ -112,12 +112,6 @@ public class Transaction_Database implements SelfCheckCapable
 	     }
 	     else   System.out.println("communication failed and transaction failed");
 	     
-	  
-	     
-	    
-	
-
-	
 	}
 
 }
