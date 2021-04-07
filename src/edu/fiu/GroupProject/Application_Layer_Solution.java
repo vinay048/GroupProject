@@ -10,38 +10,25 @@ import edu.fiu.sysdesign.SelfCheckUtils;
  * @author 18135
  *
  */
-public class Network_Interface_Layer implements SelfCheckCapable {
+public class Application_Layer_Solution implements SelfCheckCapable {
 
+	int argon2id;
 	
-	String Mac_address;
-	int Frame;
-	int Bits;
-	
-	void Error_control()
+	void encryption()
 	{
 		
 	}
 	
-	void Transport_bitstream()
-	{
-		
-	}
-	
-	Network_layer Decode()
-	{
-		return null;
-	}
-	
+	@Override
 	public String getComponentName() {
 		// TODO Auto-generated method stub
-		return "decode";
+		return "solution implemented";
 	}
 
 	@Override
 	public boolean selfCheck() {
 		// TODO Auto-generated method stub
-		
-		return SelfCheckUtils.randomCheck(0.00000001);
+		return SelfCheckUtils.randomCheck(0.00001);
 	}
 
 	@Override
@@ -50,4 +37,16 @@ public class Network_Interface_Layer implements SelfCheckCapable {
 		return SelfCheckUtils.basicSelfCheckRunner(this);
 	}
 
+	class Santitizing_inputs extends Application_Layer_Solution
+	{
+		String input;
+		
+		Application_Layer_Solution input_check()
+		{
+			return null;
+		}
+		
+	}
+	
+	
 }

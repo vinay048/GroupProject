@@ -90,8 +90,13 @@ public class Transaction_Database implements SelfCheckCapable
 		    	     if(myNetwork_layer.runSelfCheck())
 		    	     {
 		    	    	 Application_layer myApplication_layer = new Application_layer();
+		    	    	 Application_Layer_Threats myApplication_Layer_Threats = new Application_Layer_Threats();
+		    	    	 myApplication_Layer_Threats.runSelfCheck();
+		    	    	 Application_Layer_Solution myApplication_Layer_Solution = new Application_Layer_Solution();
+		    	    	 myApplication_Layer_Solution.runSelfCheck();
 		    		     if(myApplication_layer.runSelfCheck())
 		    		     {
+		    		    	 
 		    		    	 Transaction_Database myTransaction_Database =  new Transaction_Database();
 		    			     if(myTransaction_Database.runSelfCheck())
 		    			     {
@@ -115,3 +120,5 @@ public class Transaction_Database implements SelfCheckCapable
 	}
 
 }
+
+

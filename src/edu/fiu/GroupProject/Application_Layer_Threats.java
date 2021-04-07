@@ -10,38 +10,32 @@ import edu.fiu.sysdesign.SelfCheckUtils;
  * @author 18135
  *
  */
-public class Network_Interface_Layer implements SelfCheckCapable {
+public class Application_Layer_Threats implements SelfCheckCapable {
 
 	
-	String Mac_address;
-	int Frame;
-	int Bits;
 	
-	void Error_control()
-	{
-		
-	}
+	int Avalibility;
 	
-	void Transport_bitstream()
-	{
-		
-	}
-	
-	Network_layer Decode()
+	Application_layer Cross_site_scripting()
 	{
 		return null;
 	}
 	
+	Application_layer HTTP_Flood()
+	{
+		return null;
+	}
+	
+	
 	public String getComponentName() {
 		// TODO Auto-generated method stub
-		return "decode";
+		return "Threats attacking Application layer";
 	}
 
 	@Override
 	public boolean selfCheck() {
 		// TODO Auto-generated method stub
-		
-		return SelfCheckUtils.randomCheck(0.00000001);
+		return SelfCheckUtils.randomCheck(0.5);
 	}
 
 	@Override
@@ -50,4 +44,15 @@ public class Network_Interface_Layer implements SelfCheckCapable {
 		return SelfCheckUtils.basicSelfCheckRunner(this);
 	}
 
+	class Sql_injection extends Application_Layer_Threats
+	{
+		int queries;
+		
+		Application_Layer_Threats brute_force()
+		{
+			return null;
+		}
+	}
+	
+	
 }
