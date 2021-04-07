@@ -35,7 +35,7 @@ public class Application_Layer_Threats implements SelfCheckCapable {
 	@Override
 	public boolean selfCheck() {
 		// TODO Auto-generated method stub
-		return SelfCheckUtils.randomCheck(0.5);
+		return SelfCheckUtils.randomCheck(0.00001);
 	}
 
 	@Override
