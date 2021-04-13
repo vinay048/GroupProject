@@ -56,7 +56,7 @@ public class Application_layer implements SelfCheckCapable {
 	@Override
 	public boolean selfCheck() {
 		// TODO Auto-generated method stub
-		return SelfCheckUtils.randomCheck(0.01);
+		return SelfCheckUtils.randomCheck(0.999);
 	}
 
 	@Override
