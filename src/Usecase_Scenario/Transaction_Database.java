@@ -57,6 +57,14 @@ public class Transaction_Database implements SelfCheckCapable
 	@Override
 	public boolean runSelfCheck() {
 		// TODO Auto-generated method stub
-		return SelfCheckUtils.basicSelfCheckRunner(this);
+		return SelfCheckUtils.checkComponents(myal);
+	}
+
+	public void Update_log() {
+		// TODO Auto-generated method stub
+		System.out.println("Logg updated");
+		Machine mymachine = new Machine();
+		mymachine.Display_status();
+		
 	}
 }

@@ -73,15 +73,37 @@ void Sanitize_hand()
 		Customer mycustomer = new Customer();
 	    Card mycard = new Card();
 	    Machine mymachine = new Machine();
+	    Transaction_Database mytb = new Transaction_Database();
+	    Application_layer myal = new Application_layer();
+		Transport_layer mytl = new Transport_layer();
+		Network_layer mynl = new Network_layer();
+		Network_Interface_layer mynil = new Network_Interface_layer();
+		Bank_interface mybi= new Bank_interface();
+		Transaction_validation mytv = new Transaction_validation();
+	    
 		mycustomer.runSelfCheck();
 		mycard.runSelfCheck();
 		mymachine.runSelfCheck();
+		
+		mytb.runSelfCheck();
+		
+		myal.runSelfCheck();
+	
+		mytl.runSelfCheck();
+	
+		mynl.runSelfCheck();
+		
+		mynil.runSelfCheck();
+		
+		mybi.runSelfCheck();
+	
+		mytv.runSelfCheck();
+		
+		
 		      
 		mycustomer.Select_people();
         mycustomer.Select_game();
-     
         mycard.Select_card();
-    
         mymachine.Insert_card();
         
 	}

@@ -69,4 +69,9 @@ void Sanitize_hand()
 		return SelfCheckUtils.checkComponents(mytb);
 	}
 
+	public void Display_status() {
+		// TODO Auto-generated method stub
+		System.out.println("Tickets book and email sent.//// transaction completed //// Sanitize your hands");
+	}
+
 }
