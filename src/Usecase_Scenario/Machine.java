@@ -71,7 +71,7 @@ void Sanitize_hand()
 
 	public void Display_status() {
 		// TODO Auto-generated method stub
-		System.out.println("Tickets book and email sent.//// transaction completed //// Sanitize your hands");
+		System.out.println("Tickets booked and email sent.//// transaction completed //// Sanitize your hands");
 	}
 
 }

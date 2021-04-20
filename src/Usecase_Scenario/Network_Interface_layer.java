@@ -46,7 +46,7 @@ public class Network_Interface_layer implements SelfCheckCapable {
 
 	public void Decode() {
 		// TODO Auto-generated method stub
-		System.out.println("Message Decoded From bits and reasy to be sent for routing");
+		System.out.println("Message Decoded From bits and ready to be sent for routing");
 		Network_layer mynl = new Network_layer();
 		mynl.routing();
 	}
