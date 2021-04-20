@@ -39,12 +39,16 @@ public class Bank_interface implements SelfCheckCapable {
 
 	public void Unpacking() {
 		// TODO Auto-generated method stub
+		// banks communication process From network interface to appplication layer
+		
 		System.out.println("The Process from banks Network layer to Apllication takes Place in this class");
 		mytv.Validation();
 	}
 
 	public  void Packing() {
 		// TODO Auto-generated method stub
+		// banks communication process from Application layer to network interface layer
+		
 		System.out.println("Starting the Process from banks Application Layer to Netowrk Interface layer ");
 		System.out.println("Sending Bits to Netowrk interface layer ");
 		Network_Interface_layer mynil = new Network_Interface_layer();

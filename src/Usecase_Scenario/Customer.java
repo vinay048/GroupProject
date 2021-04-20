@@ -29,12 +29,14 @@ public Customer()
 public void Select_people()
 {
   System.out.println("Number of people selected");
+  // Select number of people for which tiicket has to be booked
+  
 }
 
 public void Select_game()
 {
 	System.out.println("Game Selected Miami Heats vs Boston Celtics");
-	
+	//Select which game the tickets has to be booked for
 }
 
 
@@ -84,23 +86,15 @@ void Sanitize_hand()
 		mycustomer.runSelfCheck();
 		mycard.runSelfCheck();
 		mymachine.runSelfCheck();
-		
 		mytb.runSelfCheck();
-		
 		myal.runSelfCheck();
-	
-		mytl.runSelfCheck();
-	
-		mynl.runSelfCheck();
-		
+	    mytl.runSelfCheck();
+        mynl.runSelfCheck();
 		mynil.runSelfCheck();
-		
 		mybi.runSelfCheck();
-	
 		mytv.runSelfCheck();
 		
 		
-		      
 		mycustomer.Select_people();
         mycustomer.Select_game();
         mycard.Select_card();

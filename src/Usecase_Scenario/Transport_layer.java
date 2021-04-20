@@ -42,6 +42,8 @@ public class Transport_layer implements SelfCheckCapable {
 
 	public void Message_Segmentation() {
 		// TODO Auto-generated method stub
+		//Peforms the message segmentation
+		
 		System.out.println("Message Segmented and ready to look out the routing table");
 		mynl.Routing();
 	}
@@ -49,6 +51,8 @@ public class Transport_layer implements SelfCheckCapable {
 
 	public void Ack() {
 		// TODO Auto-generated method stub
+		// Confirms the tcp ack 
+		
 		System.out.println("TCP Ack received and ready to be decoded in readable format");
 		Application_layer myal = new Application_layer();
 		myal.Decode();

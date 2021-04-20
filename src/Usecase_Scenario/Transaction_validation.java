@@ -35,6 +35,7 @@ public class Transaction_validation implements SelfCheckCapable {
 
 	public void Validation() {
 		// TODO Auto-generated method stub
+		//Validates the trabnsaction
 		System.out.println("Transaction approved and Proceeding to update the balance");
 		Transaction_validation mytv = new Transaction_validation();
 		mytv.Update();
@@ -49,7 +50,7 @@ public class Transaction_validation implements SelfCheckCapable {
 
 	private void Update() {
 		// TODO Auto-generated method stub
-		
+		//updates the bank records
 		System.out.println("Funds updated");
 		
 	}

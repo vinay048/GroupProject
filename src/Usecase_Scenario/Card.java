@@ -55,6 +55,7 @@ public class Card implements SelfCheckCapable {
 		// TODO Auto-generated method stub
 		
 		System.out.println("Card is selected");
+		//Cutomer selects the card
 		
 		
 	}

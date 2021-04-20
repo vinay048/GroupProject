@@ -25,6 +25,7 @@ public Machine()
 
 void Insert_card()
 {
+	// inserts the card and then eneters the pin here
 	System.out.println("Card Inserted");
 	System.out.println("PIN entered");
 	System.out.println("Waiting for Validtion");
@@ -71,7 +72,9 @@ void Sanitize_hand()
 
 	public void Display_status() {
 		// TODO Auto-generated method stub
-		System.out.println("Tickets booked and email sent.//// transaction completed //// Sanitize your hands");
+		// Display the status of transaction
+		
+		System.out.println("Tickets booked and email sent//// transaction completed //// Sanitize your hands");
 	}
 
 }

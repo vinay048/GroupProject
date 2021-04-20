@@ -31,6 +31,8 @@ public class Application_layer_solutions implements SelfCheckCapable {
 
 	public void Analyze_threats() {
 		// TODO Auto-generated method stub
+		// Analyze threats to find solution
+		
 		System.out.println("Analyzing Sql injection Brute force and finding solutions available");
 		Sanitizinginputs.input_check();
 	}
@@ -41,6 +43,8 @@ class Sanitizinginputs extends Application_layer_solutions
 {
 	public static void input_check()
 	{
+		// The solution for threats analyzed
+		
 		System.out.println("Checking All inputs and Applied Defense Against brute Force inputs");
 		System.out.println("Resume communication");
 		

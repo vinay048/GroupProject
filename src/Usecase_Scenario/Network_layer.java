@@ -41,6 +41,8 @@ public class Network_layer implements SelfCheckCapable {
 
 	public void Routing() {
 		// TODO Auto-generated method stub
+		// performs routing towrd banks side
+		
 		System.out.println("Looking up the routing table to transter it to next hop");
 		mynil.Mac_address();
 	}
@@ -48,7 +50,10 @@ public class Network_layer implements SelfCheckCapable {
 
 	public void routing() {
 		// TODO Auto-generated method stub
-		System.out.println("Reasy to be sent to next hop and get Acknowledgement");
+		// performs routing towards machine side
+		
+		
+		System.out.println("Ready to be sent to next hop and get Acknowledgement");
 		Transport_layer mytl = new Transport_layer();
 		mytl.Ack();
 		

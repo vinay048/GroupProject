@@ -40,12 +40,16 @@ public class Network_Interface_layer implements SelfCheckCapable {
 
 	public void Mac_address() {
 		// TODO Auto-generated method stub
+		// Adds the mac address and converts it to bits 
+		
 		System.out.println("Mac address assigned// Bit streams ready to be sent to banks interface");
 		mybi.Unpacking();
 	}
 
 	public void Decode() {
 		// TODO Auto-generated method stub
+		//gets data from banks interface
+		
 		System.out.println("Message Decoded From bits and ready to be sent for routing");
 		Network_layer mynl = new Network_layer();
 		mynl.routing();

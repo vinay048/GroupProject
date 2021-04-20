@@ -36,10 +36,13 @@ public class Transaction_Database implements SelfCheckCapable
      
    public  void Log_transaction()
      {
+	   // creates a log on local database 
+	   
     	 System.out.println("Transaction being logged on Local database");
     	 System.out.println("Starting the communication process");
     	 Transaction_Database mytb = new Transaction_Database();
     	mytb.Communication();
+    	
      }
     
 	@Override
@@ -61,6 +64,8 @@ public class Transaction_Database implements SelfCheckCapable
 	}
 
 	public void Update_log() {
+		// updates the log based on transaction validation from bank on the previous logg created.
+		
 		// TODO Auto-generated method stub
 		System.out.println("Logg updated");
 		Machine mymachine = new Machine();
